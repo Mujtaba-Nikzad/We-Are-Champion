@@ -34,7 +34,7 @@ const button = document.getElementById("button")
 const inputField = document.getElementById("input-field")
 const ulEl = document.getElementById("ul-el")
 
-button.addEventListener("dblclick", function(){
+button.addEventListener("click", function(){
    
      push(endorsesInDB, inputField.value)
     removeInputVal()
@@ -56,7 +56,7 @@ function innerfunc(Endorse){
     
     let newEl = document.createElement("li")
     newEl.textContent = EndorseValue
-    newEl.addEventListener("click", function(){
+    newEl.addEventListener("dblclick", function(){
         
         let location = ref(database, `Endorsements/${EndorseID}`)
         remove(location)
