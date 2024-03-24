@@ -34,7 +34,7 @@ const button = document.getElementById("button")
 const inputField = document.getElementById("input-field")
 const ulEl = document.getElementById("ul-el")
 
-button.addEventListener("click", function(){
+button.addEventListener("dblclick", function(){
    
      push(endorsesInDB, inputField.value)
     removeInputVal()
